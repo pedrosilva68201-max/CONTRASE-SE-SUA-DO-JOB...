@@ -1,0 +1,281 @@
+/* Resets e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0d;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 60px;
+}
+
+/* Header */
+.header {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: linear-gradient(180deg, #141419 0%, #0b0b0d 100%);
+    border-bottom: 1px solid #1a1a24;
+}
+
+/* Botão de Entrar / Cadastrar no Topo */
+.top-auth-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.btn-auth {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-auth:hover {
+    background-color: #d4af37;
+    color: #000000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #8a8a9e;
+    margin-top: 8px;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seletor de Cidades */
+.city-selector-wrapper {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.city-selector {
+    width: 100%;
+    max-width: 360px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: #121217;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.city-selector:hover, .city-selector:focus {
+    background-color: #1a1a22;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+.city-selector option, .city-selector optgroup {
+    background-color: #121217;
+    color: #ffffff;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 15px auto 40px auto;
+}
+
+/* Grid de Cards */
+.grid-models {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Cards das Modelos */
+.model-card {
+    background: #121217;
+    border: 1px solid #22222e;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.model-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+/* Fotos */
+.avatar-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 110%;
+    overflow: hidden;
+}
+
+.avatar-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.model-card:hover .avatar-wrapper img {
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    color: #d4af37;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* Infos da Modelo */
+.model-info {
+    padding: 20px 15px;
+}
+
+.model-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.location {
+    font-size: 0.8rem;
+    color: #717182;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.8rem;
+    color: #a0a0b2;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #d4af37;
+    margin-bottom: 18px;
+}
+
+.price span {
+    font-size: 0.7rem;
+    color: #8a8a9e;
+    font-weight: 300;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Botão Agendar */
+.btn-booking {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-booking:hover {
+    background-color: #d4af37;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 30px 20px 0;
+    font-size: 0.8rem;
+    color: #555566;
+    border-top: 1px solid #141419;
+    margin-top: 40px;
+}/* Botão de Suporte Flutuante */
+.btn-support-floating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #121217;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-support-floating:hover {
+    background-color: #d4af37;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    transform: translateY(-3px);
+}
